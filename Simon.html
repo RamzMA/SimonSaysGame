@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simon Game</title> <!--title-->
+    <link rel="stylesheet" href="Simon.css"> <!--imports-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--imports-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--imports-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"> <!--imports-->
+  </head>
+  <body>
+    <div class="simonGame"> <!--Div for the whole game-->
+      <div class="simonGameLeft"> <!--div for left side of game-->
+        <button class="button green" onclick="panelClicked(event.currentTarget)"></button> <!--green button-->
+        <button class="button black green"></button> <!--border-->
+        <button class="button yellow" onclick="panelClicked(event.currentTarget)"></button> <!--yellow button-->
+        <button class="button black yellow" ></button> <!--border-->
+        </div>
+        <div class="centerCircle"> <!--div for center circle-->
+          <span class="highScore">00</span> <!--high score-->
+          <button class="startButton" onclick="startGame()">START</button> <!--start button-->
+          <span class="score">00</span> <!--current score of game-->
+        </div>
+        <span class="startSign" id="startSign"></span> <!--start or stop symbol-->
+        <div class="simonGameRight"><!--right side buttons of game div-->
+          <button class="button red" onclick="panelClicked(event.currentTarget)"></button><!--red button-->
+          <button class="button black red"></button><!--border-->
+          <button class="button blue" onclick="panelClicked(event.currentTarget)"></button><!--blue button-->
+          <button class="button black blue"></button><!--border-->
+        </div>
+    </div>
+
+    <script src="Simon.js"></script><!--import-->
+  </body>
+</html>

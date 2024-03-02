@@ -1,0 +1,166 @@
+body{ /*bodye*/
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+    background-color: grey;
+}
+
+.simonGame{ /*the whole game*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1152px; 
+  height: 1152px;
+}
+
+.centerCircle{ /*center circle*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:500px;
+  width:500px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.highScore,.score,.startButton{ /*the high score and start and score*/
+  border-radius: 4px;
+}
+
+
+
+.highScore,.score{ /*only the high score and current score*/
+  background-color: rgb(181, 181, 181);
+  padding:5px 10px 5px 10px;
+  margin-left:2px;
+  margin-right: 2px;
+}
+
+.startButton{ /*start button*/
+  background-color: rgb(201, 201, 201);
+  padding:5px;
+  margin-left:2px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.startSign{ /*symbol to show game start*/
+  display: flex;
+  margin-bottom: 140px;
+  justify-content: center;
+  background-color: red;
+  height:10px;
+  width:10px;
+  border-radius: 50%;
+  z-index: 101;
+}
+
+.button{ /*buttons of the panels*/
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.button:hover{ /*occurs when hovering over buttons*/
+  box-shadow: inset 0px 0px 0px 3px rgb(171, 171, 171);
+  box-sizing: border-box;
+}
+
+button:active { /*when clicking on buttons go white*/
+  background-color: white;
+}
+
+.button.active { /*used for javascript for panels*/ 
+  background-color: white;
+}
+
+
+
+button.black.green{ /*borders*/
+  height:250px;
+  width:250px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  border:1px solid grey;
+  right: 700px;
+  top: 390px;
+  z-index: 1;
+}
+button.black.yellow{/*borders*/
+  height:250px;
+  width:250px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  border:1px solid grey;
+  right: 700px;
+  top: 735px;
+  z-index: 1;
+}
+
+button.black.blue{/*borders*/
+  height:250px;
+  width:250px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  border:1px solid grey;
+  right: 256px;
+  top: 735px;
+  z-index: 1;
+}
+
+button.black.red{/*borders*/
+  height:250px;
+  width:250px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  border:1px solid grey;
+  right: 256px;
+  top: 390px;
+  z-index: 1;
+}
+
+.blue{/*colours*/
+  right: 280px;
+  top: 761.8px;
+  background-color: blue;
+  z-index: 50;
+}
+
+
+
+.red{/*colours*/
+  right: 280px;
+  top: 413.6px;
+  background-color: red;
+  z-index: 50;
+}
+
+.green{/*colours*/
+  right: 723px;
+  top: 413.6px;
+  background-color: rgb(0, 248, 0);
+  z-index: 50;
+}
+
+.yellow{/*colours*/
+  right: 723px;
+  top: 761.8px;
+  background-color: yellow;
+  z-index: 50;
+}
+
